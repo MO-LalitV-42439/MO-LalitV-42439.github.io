@@ -858,6 +858,8 @@
     }
 
     /* --- Personalization Suite additions --- */
+    .video-frame { margin-top: 2rem; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 18px; box-shadow: var(--shadow-lg); border: 1px solid var(--border); background: #000; }
+    .video-frame video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
     .figure { margin-top: 2rem; }
     .figure img { width: 100%; border-radius: 16px; border: 1px solid var(--border); box-shadow: var(--shadow-md); background: #fff; }
     .figure figcaption { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 0.9rem; }
@@ -888,21 +890,6 @@
 <!-- CURSOR SPOTLIGHT -->
 <div id="cursor-glow"></div>
 
-<!-- VIDEO SPLASH (fullscreen) -->
-<section class="video-splash" aria-label="MO Personalization Suite intro video">
-  <video
-    id="splashVideo"
-    class="bg-video"
-    autoplay muted loop playsinline controls preload="auto">
-    <source src="videos/ET-HPVideo.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <span class="scroll-cue" aria-hidden="true">Scroll</span>
-</section>
-
-<!-- SECTION DIVIDER -->
-<div class="section-divider" role="separator" aria-hidden="true"></div>
-
 <!-- HERO -->
 <section class="hero-section">
   <canvas id="neural"></canvas>
@@ -911,8 +898,23 @@
     <h1 id="heroTitle">Every Investor Gets a Different Home Page</h1>
     <p class="reveal">One behavioural foundation powering the RIISE home page and tailored omnichannel communications for every investor &mdash; built in-house at Motilal Oswal.</p>
     <div class="links reveal">
-      <a href="#about" class="btn-primary">See How It Works</a>
+      <a href="#video" class="btn-primary">Watch the 2-min Video</a>
       <a href="#metrics" class="btn-outline">View Results</a>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+  <div class="container wide reveal">
+    <p class="section-label">Watch</p>
+    <h2>The MO Personalization Suite in two minutes</h2>
+    <p class="lead">A two-minute walkthrough of the behavioural foundation, the two-stage ranker, and the live results on the RIISE app.</p>
+    <div class="video-frame">
+      <video controls playsinline preload="metadata">
+        <source src="videos/ET-HPVideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 </section>
@@ -1030,7 +1032,7 @@
     <img src="images/riise-logo.png" alt="RIISE" />
   </div>
   <p><strong>MO Personalization Suite</strong> &mdash; Motilal Oswal Financial Services Ltd.</p>
-  <p style="margin-top:0.5rem;">Data Science Team &middot; Mumbai, India &middot; 2026</p>
+  <p style="margin-top:0.5rem;">AI Personalization Team &middot; Mumbai, India &middot; 2026</p>
 </footer>
 
 <script>
