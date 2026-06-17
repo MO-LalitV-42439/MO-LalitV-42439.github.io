@@ -1,23 +1,26 @@
-# MO Research Suite — GitHub Pages
+# MO Personalization Suite — GitHub Pages
 
-## Files in this folder
+Single-page site for the **MO Personalization Suite** (AI-driven RIISE home page & omnichannel communications), built in-house at Motilal Oswal.
+
+Live at **https://mo-lalitv-42439.github.io/**
+
+## Files
 
 ```
-index.html        ← main page (upload this)
+index.html               ← the page (hero video + content sections)
+videos/ET-HPVideo.mp4     ← fullscreen splash video
 images/
-  slide1.jpg      ← Research Home screenshot
-  slide2.jpg      ← Research Assistant welcome screen
-  slide3.jpg      ← Query processing screen
-  slide4.jpg      ← HDFC Bank response screen
+  arch.png                ← architecture: one foundation → two surfaces
+  components.png          ← how it works: behavioural foundation + two-stage ranker
+  deploy.png              ← live deployment across surfaces
+  default.png             ← default home page (same for everyone)
+  personalized.png        ← personalized home page (one user)
+  seg01–03.png            ← segment communication examples
+  banner.png              ← personalized communication banner
+  mo-wealth-logo.png      ← footer logo
+  riise-logo.png          ← footer logo
 ```
 
-## How to upload
+## Deploy
 
-1. Go to your GitHub repo
-2. Click **Add file → Upload files**
-3. Upload `index.html`
-4. Create an `images/` folder and upload all 4 screenshots with exact filenames above
-5. Commit — site goes live in ~2 minutes
-
-## Your URL
-`https://yourusername.github.io/research-suite`
+Pushing to `main` auto-builds via `.github/workflows/static.yml` (GitHub Pages); the site is live in ~1–2 minutes.

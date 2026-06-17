@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MO Research Suite — Motilal Oswal Financial Services</title>
+  <title>MO Personalization Suite — Motilal Oswal Financial Services</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -11,9 +11,9 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --purple: #5B21B6;
-      --purple-light: #7C3AED;
-      --purple-soft: #A78BFA;
+      --purple: #303192;
+      --purple-light: #4346c9;
+      --purple-soft: #9ea0e0;
       --green: #16A34A;
       --text: #111827;
       --muted: #6B7280;
@@ -24,6 +24,7 @@
       --shadow-md: 0 4px 6px -1px rgba(16,24,40,0.06), 0 12px 24px -4px rgba(16,24,40,0.08);
       --shadow-lg: 0 24px 48px -12px rgba(16,24,40,0.18);
       --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --gold: #FFC000;
     }
 
     html { scroll-behavior: smooth; }
@@ -32,7 +33,7 @@
       font-family: 'Inter', sans-serif;
       color: var(--text);
       background:
-        radial-gradient(60% 50% at 12% 8%, rgba(124,58,237,0.10), transparent 60%),
+        radial-gradient(60% 50% at 12% 8%, rgba(67,70,201,0.10), transparent 60%),
         radial-gradient(55% 45% at 92% 30%, rgba(34,211,238,0.08), transparent 60%),
         radial-gradient(60% 50% at 50% 100%, rgba(219,39,119,0.07), transparent 60%),
         linear-gradient(180deg, #ffffff 0%, #f7f5fd 50%, #fdf6fb 100%);
@@ -63,7 +64,7 @@
     #cursor-glow {
       position: fixed; top: 0; left: 0;
       width: 420px; height: 420px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(124,58,237,0.13), transparent 62%);
+      background: radial-gradient(circle, rgba(67,70,201,0.13), transparent 62%);
       transform: translate(-50%, -50%);
       pointer-events: none; z-index: 1;
       opacity: 0; transition: opacity 0.4s var(--ease);
@@ -75,7 +76,7 @@
       position: fixed; top: 0; left: 0; height: 3px; width: 0%;
       z-index: 10000;
       background: linear-gradient(90deg, var(--purple), var(--purple-light), var(--purple-soft));
-      box-shadow: 0 0 12px rgba(124,58,237,0.5);
+      box-shadow: 0 0 12px rgba(67,70,201,0.5);
       transition: width 0.1s linear;
     }
 
@@ -102,7 +103,7 @@
       font-size: 0.72rem; font-weight: 600;
       background: linear-gradient(135deg, var(--purple), var(--purple-light));
       color: white; padding: 0.3rem 0.85rem; border-radius: 999px;
-      box-shadow: 0 4px 12px rgba(91,33,182,0.25);
+      box-shadow: 0 4px 12px rgba(48,49,146,0.25);
     }
     /* pulsing ring on the award badge */
     nav .badge::before {
@@ -190,8 +191,8 @@
       text-decoration: none;
       transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), background 0.25s var(--ease);
     }
-    .video-splash .btn-primary { background: linear-gradient(135deg, var(--purple), var(--purple-light)); color: #fff; box-shadow: 0 8px 20px rgba(91,33,182,0.35); }
-    .video-splash .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(91,33,182,0.45); }
+    .video-splash .btn-primary { background: linear-gradient(135deg, var(--purple), var(--purple-light)); color: #fff; box-shadow: 0 8px 20px rgba(48,49,146,0.35); }
+    .video-splash .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(48,49,146,0.45); }
     .video-splash .btn-outline { border: 1.5px solid rgba(255,255,255,0.55); color: #fff; background: rgba(255,255,255,0.08); }
     .video-splash .btn-outline:hover { transform: translateY(-3px); border-color: #fff; box-shadow: 0 0 24px rgba(255,255,255,0.25); }
     /* scroll cue */
@@ -225,14 +226,14 @@
       background:
         radial-gradient(60% 80% at 50% 0%, #1b1140 0%, transparent 60%),
         linear-gradient(180deg, #0a0a16 0%, #0d0b1f 60%, #0a0a16 100%);
-      border-bottom: 1px solid rgba(124,58,237,0.25);
+      border-bottom: 1px solid rgba(67,70,201,0.25);
     }
     /* faint tech grid overlay */
     .hero-section::after {
       content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
       background-image:
-        linear-gradient(rgba(124,58,237,0.07) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(124,58,237,0.07) 1px, transparent 1px);
+        linear-gradient(rgba(67,70,201,0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(67,70,201,0.07) 1px, transparent 1px);
       background-size: 46px 46px;
       mask-image: radial-gradient(circle at 50% 40%, #000 0%, transparent 78%);
       -webkit-mask-image: radial-gradient(circle at 50% 40%, #000 0%, transparent 78%);
@@ -258,8 +259,8 @@
       max-width: 1400px;
       z-index: -1;
       background:
-        radial-gradient(40% 50% at 25% 30%, rgba(124,58,237,0.18), transparent 70%),
-        radial-gradient(40% 45% at 75% 25%, rgba(167,139,250,0.20), transparent 70%),
+        radial-gradient(40% 50% at 25% 30%, rgba(67,70,201,0.18), transparent 70%),
+        radial-gradient(40% 45% at 75% 25%, rgba(158,160,224,0.20), transparent 70%),
         radial-gradient(45% 50% at 55% 70%, rgba(22,163,74,0.10), transparent 70%);
       filter: blur(20px);
       animation: drift 18s ease-in-out infinite alternate;
@@ -275,9 +276,9 @@
       color: var(--purple-soft);
       margin-bottom: 1.4rem;
       padding: 0.4rem 0.9rem;
-      border: 1px solid rgba(167,139,250,0.35);
+      border: 1px solid rgba(158,160,224,0.35);
       border-radius: 999px;
-      background: rgba(124,58,237,0.10);
+      background: rgba(67,70,201,0.10);
       backdrop-filter: blur(6px);
     }
     /* live AI status dot */
@@ -298,13 +299,13 @@
       line-height: 1.05;
       letter-spacing: -0.02em;
       margin-bottom: 1.5rem;
-      background: linear-gradient(110deg, #ffffff 0%, #c4b5fd 38%, var(--purple-light) 52%, #ffffff 80%, #c4b5fd 100%);
+      background: linear-gradient(110deg, #ffffff 0%, #c4c5f0 38%, var(--purple-light) 52%, #ffffff 80%, #c4c5f0 100%);
       background-size: 250% 100%;
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
       animation: shimmer 7s ease-in-out infinite;
-      filter: drop-shadow(0 0 26px rgba(124,58,237,0.35));
+      filter: drop-shadow(0 0 26px rgba(67,70,201,0.35));
     }
     @keyframes shimmer {
       0%, 100% { background-position: 0% 50%; }
@@ -316,7 +317,7 @@
       display: inline-block;
       opacity: 0;
       transform: translateY(40px) rotate(4deg);
-      background: linear-gradient(110deg, #ffffff 0%, #c4b5fd 38%, var(--purple-light) 52%, #ffffff 80%, #c4b5fd 100%);
+      background: linear-gradient(110deg, #ffffff 0%, #c4c5f0 38%, var(--purple-light) 52%, #ffffff 80%, #c4c5f0 100%);
       background-size: 250% 100%;
       -webkit-background-clip: text;
       background-clip: text;
@@ -355,11 +356,11 @@
     .btn-primary {
       background: linear-gradient(135deg, var(--purple), var(--purple-light));
       color: white;
-      box-shadow: 0 8px 20px rgba(91,33,182,0.30);
+      box-shadow: 0 8px 20px rgba(48,49,146,0.30);
     }
-    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(91,33,182,0.40); }
-    .btn-outline { border: 1.5px solid rgba(167,139,250,0.4); color: #e9e6f7; background: rgba(255,255,255,0.06); backdrop-filter: blur(8px); }
-    .btn-outline:hover { transform: translateY(-3px); border-color: var(--purple-soft); box-shadow: 0 0 24px rgba(124,58,237,0.3); }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(48,49,146,0.40); }
+    .btn-outline { border: 1.5px solid rgba(158,160,224,0.4); color: #e9e6f7; background: rgba(255,255,255,0.06); backdrop-filter: blur(8px); }
+    .btn-outline:hover { transform: translateY(-3px); border-color: var(--purple-soft); box-shadow: 0 0 24px rgba(67,70,201,0.3); }
 
     /* STATS */
     .stats {
@@ -407,7 +408,7 @@
     h2::after {
       content: ""; position: absolute; left: 0; bottom: 0;
       width: 54px; height: 3px; border-radius: 2px;
-      background: linear-gradient(90deg, var(--purple), var(--purple-light));
+      background: linear-gradient(90deg, var(--gold), #ffd84d);
       transform: scaleX(0); transform-origin: left;
       transition: transform 0.8s var(--ease) 0.25s;
     }
@@ -470,7 +471,7 @@
       0%, 100% { transform: translateY(0); }
       50%      { transform: translateY(-14px); }
     }
-    .phone-wrap:hover img { animation-play-state: paused; transform: translateY(-8px) rotate(-1deg); box-shadow: 0 32px 64px -16px rgba(91,33,182,0.28); }
+    .phone-wrap:hover img { animation-play-state: paused; transform: translateY(-8px) rotate(-1deg); box-shadow: 0 32px 64px -16px rgba(48,49,146,0.28); }
 
     /* DUAL-PHONE FAN SHOWCASE */
     .phone-duo {
@@ -481,7 +482,7 @@
     .phone-duo::before {
       content: ""; position: absolute; z-index: 0;
       width: 72%; height: 70%;
-      background: radial-gradient(circle, rgba(124,58,237,0.20), transparent 70%);
+      background: radial-gradient(circle, rgba(67,70,201,0.20), transparent 70%);
       filter: blur(34px);
     }
     .phone-duo .ph {
@@ -503,8 +504,8 @@
       50%      { transform: translate(30%, -10px) rotate(6deg); }
     }
     .phone-duo:hover .ph { animation-play-state: paused; }
-    .phone-duo:hover .ph-back  { transform: translate(-44%, -6px) rotate(-10deg) scale(0.9); box-shadow: 0 32px 64px -16px rgba(91,33,182,0.30); }
-    .phone-duo:hover .ph-front { transform: translate(42%, -6px) rotate(9deg); box-shadow: 0 32px 64px -16px rgba(91,33,182,0.30); }
+    .phone-duo:hover .ph-back  { transform: translate(-44%, -6px) rotate(-10deg) scale(0.9); box-shadow: 0 32px 64px -16px rgba(48,49,146,0.30); }
+    .phone-duo:hover .ph-front { transform: translate(42%, -6px) rotate(9deg); box-shadow: 0 32px 64px -16px rgba(48,49,146,0.30); }
 
     /* TRIO-PHONE FAN SHOWCASE */
     .phone-trio {
@@ -516,7 +517,7 @@
     .phone-trio::before {
       content: ""; position: absolute; z-index: 0;
       width: 80%; height: 70%;
-      background: radial-gradient(circle, rgba(124,58,237,0.20), transparent 70%);
+      background: radial-gradient(circle, rgba(67,70,201,0.20), transparent 70%);
       filter: blur(36px);
     }
     .phone-trio .ph {
@@ -531,9 +532,9 @@
     .phone-trio .ph-right  { z-index: 1; filter: brightness(0.95); transform: translate(46%, 12px) rotate(11deg) scale(0.84); }
     .phone-trio .ph-center { z-index: 2; transform: translateY(-4px); }
     .phone-trio:hover { animation-play-state: paused; }
-    .phone-trio:hover .ph-left   { transform: translate(-60%, 8px) rotate(-14deg) scale(0.84); box-shadow: 0 32px 64px -16px rgba(91,33,182,0.30); }
-    .phone-trio:hover .ph-right  { transform: translate(60%, 8px) rotate(14deg) scale(0.84); box-shadow: 0 32px 64px -16px rgba(91,33,182,0.30); }
-    .phone-trio:hover .ph-center { transform: translateY(-12px) scale(1.03); box-shadow: 0 36px 70px -16px rgba(91,33,182,0.34); }
+    .phone-trio:hover .ph-left   { transform: translate(-60%, 8px) rotate(-14deg) scale(0.84); box-shadow: 0 32px 64px -16px rgba(48,49,146,0.30); }
+    .phone-trio:hover .ph-right  { transform: translate(60%, 8px) rotate(14deg) scale(0.84); box-shadow: 0 32px 64px -16px rgba(48,49,146,0.30); }
+    .phone-trio:hover .ph-center { transform: translateY(-12px) scale(1.03); box-shadow: 0 36px 70px -16px rgba(48,49,146,0.34); }
 
     /* BULLETS */
     ul.feature-list { list-style: none; padding: 0; margin-top: 1.5rem; }
@@ -555,8 +556,8 @@
       margin-top: 3rem;
     }
     /* per-card accent palette */
-    .metric-card { --c1: #7C3AED; --c2: #A78BFA; }
-    .metric-card:nth-child(1) { --c1: #7C3AED; --c2: #C4B5FD; }
+    .metric-card { --c1: #4346c9; --c2: #9ea0e0; }
+    .metric-card:nth-child(1) { --c1: #4346c9; --c2: #c4c5f0; }
     .metric-card:nth-child(2) { --c1: #2563EB; --c2: #93C5FD; }
     .metric-card:nth-child(3) { --c1: #0891B2; --c2: #67E8F9; }
     .metric-card:nth-child(4) { --c1: #16A34A; --c2: #86EFAC; }
@@ -635,7 +636,7 @@
       gap: 1.75rem; margin-top: 2.75rem;
     }
     .quote-card {
-      --c1: #7C3AED; --c2: #A78BFA;
+      --c1: #4346c9; --c2: #9ea0e0;
       position: relative;
       padding: 2.5rem 1.8rem 1.6rem;
       background: linear-gradient(180deg, rgba(255,255,255,0.60), rgba(255,255,255,0.46));
@@ -647,7 +648,7 @@
       overflow: hidden;
       transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease);
     }
-    .quote-card:nth-child(1) { --c1: #7C3AED; --c2: #C4B5FD; }
+    .quote-card:nth-child(1) { --c1: #4346c9; --c2: #c4c5f0; }
     .quote-card:nth-child(2) { --c1: #0891B2; --c2: #67E8F9; }
     .quote-card:nth-child(3) { --c1: #DB2777; --c2: #F9A8D4; }
     .quote-card::before {
@@ -800,13 +801,13 @@
       width: 100%;
       background: linear-gradient(90deg,
         transparent 0%,
-        rgba(124,58,237,0.0) 8%,
-        rgba(167,139,250,0.55) 35%,
-        rgba(124,58,237,0.85) 50%,
-        rgba(167,139,250,0.55) 65%,
-        rgba(124,58,237,0.0) 92%,
+        rgba(67,70,201,0.0) 8%,
+        rgba(158,160,224,0.55) 35%,
+        rgba(67,70,201,0.85) 50%,
+        rgba(158,160,224,0.55) 65%,
+        rgba(67,70,201,0.0) 92%,
         transparent 100%);
-      box-shadow: 0 0 24px rgba(124,58,237,0.45);
+      box-shadow: 0 0 24px rgba(67,70,201,0.45);
     }
     .section-divider::before,
     .section-divider::after {
@@ -817,7 +818,7 @@
       border-radius: 50%;
       background: var(--purple-light);
       transform: translateY(-50%);
-      box-shadow: 0 0 14px rgba(124,58,237,0.85);
+      box-shadow: 0 0 14px rgba(67,70,201,0.85);
     }
     .section-divider::before { left: calc(50% - 80px); }
     .section-divider::after  { left: calc(50% + 74px); }
@@ -855,6 +856,28 @@
       .screenshots img { clip-path: none !important; }
       #cursor-glow { display: none !important; }
     }
+
+    /* --- Personalization Suite additions --- */
+    .figure { margin-top: 2rem; }
+    .figure img { width: 100%; border-radius: 16px; border: 1px solid var(--border); box-shadow: var(--shadow-md); background: #fff; }
+    .figure figcaption { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 0.9rem; }
+    .compare { display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2.5rem; }
+    .compare .col { text-align: center; }
+    .compare .col img { height: 400px; max-width: 100%; border-radius: 26px; border: 7px solid #0e0f1c; box-shadow: var(--shadow-lg); background: #0e0f1c; transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease); }
+    .compare .col img:hover { transform: translateY(-8px); box-shadow: 0 36px 70px -18px rgba(48,49,146,0.42); }
+    .compare .tag { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.8rem; }
+    .compare .tag.on { color: var(--purple); }
+    .compare .arrow { display: flex; flex-direction: column; align-items: center; color: var(--purple); }
+    .compare .arrow .a { font-size: 2.2rem; line-height: 1; }
+    .compare .arrow .l { font-size: 0.7rem; font-weight: 700; max-width: 90px; text-align: center; margin-top: 0.4rem; }
+    @media (max-width: 760px) { .compare .arrow .a { transform: rotate(90deg); } .compare .col img { height: 300px; } }
+    .seg-grid { display: grid; grid-template-columns: 1fr; gap: 1.6rem; margin: 2.5rem auto 0; max-width: 960px; }
+    .seg-grid img { width: 100%; border-radius: 14px; border: 1px solid var(--border); box-shadow: var(--shadow-md); background: #fff; transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease); }
+    .seg-grid img:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .figure.narrow { max-width: 960px; margin-left: auto; margin-right: auto; }
+    .footer-logos { display: flex; align-items: center; justify-content: center; gap: 1.1rem; margin-bottom: 1.1rem; }
+    .footer-logos img { height: 30px; }
+    .footer-logos .div { width: 1px; height: 26px; background: var(--border); }
   </style>
 </head>
 <body>
@@ -866,13 +889,12 @@
 <div id="cursor-glow"></div>
 
 <!-- VIDEO SPLASH (fullscreen) -->
-<section class="video-splash" aria-label="MO Research Suite intro video">
+<section class="video-splash" aria-label="MO Personalization Suite intro video">
   <video
     id="splashVideo"
     class="bg-video"
-    autoplay muted loop playsinline controls preload="auto"
-    poster="images/preview.webp">
-    <source src="videos/sarthak_input.mp4" type="video/mp4" />
+    autoplay muted loop playsinline controls preload="auto">
+    <source src="videos/ET-HPVideo.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
   <span class="scroll-cue" aria-hidden="true">Scroll</span>
@@ -885,34 +907,34 @@
 <section class="hero-section">
   <canvas id="neural"></canvas>
   <div class="hero">
-    <p class="eyebrow reveal">AI-Powered · Motilal Oswal · RIISE App · Live since January 2026</p>
-    <h1 id="heroTitle">Democratising Nearly Four Decades of Institutional Research</h1>
-    <p class="reveal">AI-powered research intelligence for India's retail investor — live buy/sell recommendations, analyst report summaries, and conversational market insights, all in one app.</p>
+    <p class="eyebrow reveal">AI-Driven &middot; Motilal Oswal &middot; RIISE App &middot; Live in Production</p>
+    <h1 id="heroTitle">Every Investor Gets a Different Home Page</h1>
+    <p class="reveal">One behavioural foundation powering the RIISE home page and tailored omnichannel communications for every investor &mdash; built in-house at Motilal Oswal.</p>
     <div class="links reveal">
-      <a href="#products" class="btn-primary">See the Product</a>
-      <a href="#metrics" class="btn-outline">View Metrics</a>
+      <a href="#about" class="btn-primary">See How It Works</a>
+      <a href="#metrics" class="btn-outline">View Results</a>
     </div>
   </div>
 </section>
 
 <!-- STATS BAR -->
 <div class="stats">
-  <div class="stat"><span class="number" data-count="200" data-suffix="K+">0</span><span class="label">Monthly Unique Users</span></div>
-  <div class="stat"><span class="number" data-count="1" data-suffix="M+">0</span><span class="label">Content Engagements / Month</span></div>
-  <div class="stat"><span class="number" data-prefix="₹" data-count="100" data-suffix="Cr+">0</span><span class="label">Monthly Order Flow Attributed</span></div>
-  <div class="stat"><span class="number" data-count="81">0</span><span class="label">Net Promoter Score</span></div>
+  <div class="stat"><span class="number" data-count="5.7" data-prefix="+" data-suffix="%">0</span><span class="label">Widget Engagement Lift</span></div>
+  <div class="stat"><span class="number" data-count="24" data-prefix="+" data-suffix="%">0</span><span class="label">Mutual Fund Discovery</span></div>
+  <div class="stat"><span class="number" data-count="2.1" data-suffix="x">0</span><span class="label">Fixed Deposit Engagement</span></div>
+  <div class="stat"><span class="number" data-count="18">0</span><span class="label">Behavioural Segments Live</span></div>
 </div>
 
-<!-- ABOUT -->
+<!-- ABOUT / PROBLEM -->
 <section id="about">
   <div class="container wide reveal">
     <p class="section-label">The Problem</p>
-    <h2>Institutional research existed. Access didn't.</h2>
+    <h2>The same home page. For everyone.</h2>
     <div class="problem-flow">
-      <p class="lead">India has over <strong>100 million demat accounts</strong>. But high-quality equity research (detailed, analyst-backed, conviction-rated) was locked behind 30-page PDFs, institutional language, and English-only delivery.</p>
-      <p class="problem-punch">The gap was never the research. It was <span class="hl">accessibility</span>.</p>
+      <p class="lead">Most investing apps show every user the <strong>same home page</strong> &mdash; same widgets, same asset-class tiles, same tools &mdash; whether you're a first-time SIP investor or an active F&amp;O trader.</p>
+      <p class="problem-punch">Relevant products stay buried. Communications feel like <span class="hl">spam</span>.</p>
       <div class="solution-box">
-        <p>The MO Research Suite closes that gap for the first time inside a regulated brokerage context, turning static reports into <strong>conversational, real-time intelligence</strong> available to every retail investor.</p>
+        <p>The <strong>MO Personalization Suite</strong> closes that gap &mdash; one behavioural foundation that reorders every widget per user and tailors communications across push, email, SMS, and WhatsApp. Live on the RIISE app today.</p>
       </div>
     </div>
   </div>
@@ -920,233 +942,95 @@
 
 <hr />
 
-<!-- PRODUCT 1: RESEARCH HOME -->
+<!-- ARCHITECTURE -->
 <section id="products" class="alt">
-  <div class="container wide">
-    <div class="two-col reveal">
-      <div>
-        <p class="section-label">Product 1</p>
-        <h2>Research Home</h2>
-        <p class="lead">A dedicated, always-on research surface embedded inside the RIISE trading app. Powered by an automated Lambda-based LLM pipeline that processes every analyst report without human intervention.</p>
-        <ul class="feature-list">
-          <li>Live equity and F&O calls curated by MO researchers — updated in real time</li>
-          <li>AI-generated daily market and commodity analysis</li>
-          <li>Every analyst report summarised in 500 words with audio playback</li>
-          <li>News feed with real-time sentiment signals</li>
-          <li>Covers equity, derivatives, and commodities</li>
-        </ul>
-      </div>
-      <div class="phone-trio">
-        <img src="images/1.jpeg" class="ph ph-left" alt="Research Home — market analysis" loading="lazy" />
-        <img src="images/2.jpeg" class="ph ph-right" alt="Research Home — research feed" loading="lazy" />
-        <img src="images/preview.webp" class="ph ph-center" alt="Research Home screen" loading="lazy" />
-      </div>
-    </div>
+  <div class="container wide reveal">
+    <p class="section-label">Architecture</p>
+    <h2>One foundation &rarr; two surfaces</h2>
+    <p class="lead">A single feature store and an 18-segment behavioural taxonomy power both home-page personalization and omnichannel communications. A ranker scores every widget; a re-ranker adds diversity, popularity, and cross-sell.</p>
+    <figure class="figure">
+      <img src="images/arch.png" alt="MO Personalization Suite architecture" loading="lazy" />
+      <figcaption>One feature store + segment taxonomy &rarr; the home page and communications.</figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- PRODUCT 2: RESEARCH ASSISTANT -->
+<!-- HOW IT WORKS -->
 <section>
-  <div class="container wide">
-    <div class="two-col reverse reveal">
-      <div>
-        <p class="section-label">Product 2</p>
-        <h2>MO Research Assistant</h2>
-        <p class="lead">A multi-agent AI assistant invoked from the centre of the app's navigation. Not a chatbot — a reasoning engine with access to live data, 350+ stock reports, 200+ screeners, and technical analysis tools.</p>
-        <ul class="feature-list">
-          <li>Live buy/sell recommendations backed by MO analyst research</li>
-          <li>200+ techno-fundamental smart screeners</li>
-          <li>Technical analysis — RSI, MACD, support and resistance</li>
-          <li>Natural language queries in English, Hindi, or Hinglish</li>
-          <li>Every response cited and traceable to source</li>
-          <li>Median response time: 10 seconds</li>
-        </ul>
-      </div>
-      <div class="phone-duo">
-        <img src="images/RA-2.png" class="ph ph-back" alt="MO Research Assistant results" loading="lazy" />
-        <img src="images/RA-3.png" class="ph ph-front" alt="MO Research Assistant screen" loading="lazy" />
-      </div>
-    </div>
+  <div class="container wide reveal">
+    <p class="section-label">How It Works</p>
+    <h2>A behavioural foundation and a two-stage ranker</h2>
+    <p class="lead">Two components do the work: a behavioural foundation that turns hundreds of features into clear segments, and a two-stage ranker that surfaces the widgets each user actually wants.</p>
+    <figure class="figure"><img src="images/components.png" alt="Personalization Suite components" loading="lazy" /></figure>
   </div>
 </section>
 
-<!-- SCREENSHOTS -->
+<!-- LIVE DEPLOYMENT -->
 <section class="alt">
   <div class="container wide reveal">
-    <p class="section-label">Product in Action</p>
-    <h2>From question to investment view — in 10 seconds</h2>
-    <p class="lead">A user asks "view on HDFC Bank" in plain language. The assistant orchestrates across live data, analyst research, and consensus intelligence — returning a structured investment view, cited and validated.</p>
-    <div class="screenshots" data-stagger>
-      <img src="images/slide2.jpg" alt="Research Assistant welcome" loading="lazy" />
-      <img src="images/slide3.jpg" alt="Query being processed" loading="lazy" />
-      <img src="images/slide4.jpg" alt="HDFC Bank investment view" loading="lazy" />
+    <p class="section-label">Live Deployment</p>
+    <h2>Live on the RIISE app</h2>
+    <p class="lead">The same feature store and 18-segment taxonomy drive per-user widget order on the home page and tailored content across four channels &mdash; push, email, SMS, and WhatsApp. Next, we're extending it to every RIISE surface.</p>
+    <figure class="figure"><img src="images/deploy.png" alt="Live deployment across surfaces" loading="lazy" /></figure>
+  </div>
+</section>
+
+<!-- PERSONALIZATION IN ACTION -->
+<section>
+  <div class="container wide reveal">
+    <p class="section-label">In Action</p>
+    <h2>The same page, reordered for each user</h2>
+    <p class="lead">On the left, the default home page &mdash; the same for everyone. On the right, the same page personalized for one user: the ranker reorders asset-class tiles, the navigation rail, and recommended offerings, so what matters rises to the top.</p>
+    <div class="compare">
+      <div class="col"><div class="tag">Default &middot; same for everyone</div><img src="images/default.png" alt="Default RIISE home page" loading="lazy" /></div>
+      <div class="arrow"><span class="a">&rarr;</span><span class="l">Ranker + Re-ranker</span></div>
+      <div class="col"><div class="tag on">Personalized &middot; one user</div><img src="images/personalized.png" alt="Personalized RIISE home page" loading="lazy" /></div>
     </div>
   </div>
 </section>
 
-<!-- VIDEO -->
-<section>
+<!-- SEGMENT EXAMPLES -->
+<section class="alt">
   <div class="container wide reveal">
-    <p class="section-label">Demo</p>
-    <h2>See it in action</h2>
-    <p class="lead">Watch the MO Research Suite deliver live investment intelligence inside the RIISE trading app.</p>
-    <div style="margin-top:2rem; position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:18px; box-shadow: var(--shadow-lg);">
-      <video
-        controls playsinline preload="metadata"
-        style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; border-radius:18px; background:#000;">
-        <source src="videos/ET-HPVideo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <p class="section-label">Segment Examples</p>
+    <h2>18 segments, not just labels</h2>
+    <p class="lead">The taxonomy drives differentiated communications for each cohort &mdash; non-equity clients get diversification nudges, holding-horizon cohorts get content matched to how long they invest, and early churn signals trigger re-engagement, not spam.</p>
+    <div class="seg-grid" data-stagger>
+      <img src="images/seg01.png" alt="Segment example 1" loading="lazy" />
+      <img src="images/seg02.png" alt="Segment example 2" loading="lazy" />
+      <img src="images/seg03.png" alt="Segment example 3" loading="lazy" />
     </div>
+    <figure class="figure narrow"><img src="images/banner.png" alt="Personalized communication banner" loading="lazy" /></figure>
   </div>
 </section>
 
 <!-- METRICS -->
 <section id="metrics">
   <div class="container wide reveal">
-    <p class="section-label">Performance Metrics</p>
-    <h2>Benchmarks & Outcomes</h2>
-    <p class="lead">All figures reflect monthly run-rate. Product live since January 2026. Continuously monitored via live observability dashboard — evaluated by the Business Strategy team and presented at executive-level leadership reviews.</p>
+    <p class="section-label">Performance &amp; Impact</p>
+    <h2>A/B test results on the live app</h2>
+    <p class="lead">Treatment vs control on the live RIISE app. Personalization lifted engagement, drove tail asset-class discovery, and grew brokerage revenue &mdash; with 18 behavioural segments running in production.</p>
     <div class="metrics-grid" data-stagger>
-      <div class="metric-card">
-        <div class="val">90%+</div>
-        <div class="desc">Response accuracy — continuously evaluated by MO Equity Research and Strategy teams against published analyst positions</div>
-      </div>
-      <div class="metric-card">
-        <div class="val">81</div>
-        <div class="desc">NPS — world-class benchmark. Apple scores ~72. Most financial services products sit between 30 and 50</div>
-      </div>
-      <div class="metric-card">
-        <div class="val">10s</div>
-        <div class="desc">Median response latency for reasoning-category multi-agent queries — comparable systems operate in 4–10 minutes</div>
-      </div>
-      <div class="metric-card">
-        <div class="val green">₹100Cr+</div>
-        <div class="desc">Monthly order flow directly attributed to Research Suite interactions — tracked via live production monitoring</div>
-      </div>
-      <div class="metric-card">
-        <div class="val green">+40%</div>
-        <div class="desc">Organic engagement spike during Iran-US conflict — zero marketing spend, demonstrating earned trust under market stress</div>
-      </div>
-      <div class="metric-card">
-        <div class="val">5,000+</div>
-        <div class="desc">Research audio summaries produced — every analyst report converted to audio, consumable on the go</div>
-      </div>
-      <div class="metric-card">
-        <div class="val">2,000+</div>
-        <div class="desc">Pre-market recommendation short videos — concise explainers for investors who prefer visual formats</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="alt">
-  <div class="container wide reveal">
-    <p class="section-label">Franchise Testimonials</p>
-    <h2>Validated by those who know research best</h2>
-    <p class="lead">MO's top-producing franchise partners — experienced advisors with years of institutional research access — are among the product's strongest advocates.</p>
-    <div class="quote-grid" data-stagger>
-      <div class="quote-card">
-        <p>Research Assistant has significantly improved the way we engage with our clients. Instead of spending hours gathering reports and market insights, our team is now able to provide quicker, more confident, and research-backed guidance to investors.</p>
-        <div class="firm">Gandhi Investmall, Godhra</div>
-      </div>
-      <div class="quote-card">
-        <p>The platform has made financial research far more accessible for both our advisors and clients. Whether it is stock comparisons, sector outlook, or investment recommendations, the responses are detailed, accurate, and easy to understand.</p>
-        <div class="firm">Mas Consultancy, Mehsana</div>
-      </div>
-      <div class="quote-card">
-        <p>Research Assistant has become a valuable support system for our day-to-day advisory activities. The ability to instantly access research reports, technical insights, news, and company analysis has helped our team respond faster and make discussions with clients more meaningful.</p>
-        <div class="firm">KRM Securities, Dombivali</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- VALIDATION -->
-<section>
-  <div class="container wide reveal">
-    <p class="section-label">Independent Validation</p>
-    <h2>Governance & Evidence</h2>
-    <p class="lead">A three-layer governance chain ensures every number cited is organisationally validated — not self-reported by the product team.</p>
-    <div class="gov-grid" data-stagger>
-      <div class="gov-card">
-        <h4>Business Strategy Team</h4>
-        <p>Independently evaluates all KPIs — order flow attribution, accuracy scores, engagement metrics — providing formal sign-off on reported outcomes.</p>
-      </div>
-      <div class="gov-card">
-        <h4>Equity Research Team</h4>
-        <p>Continuously monitors response accuracy against published analyst research, price targets, and sector theses. The 90%+ figure reflects ongoing review, not a one-time test.</p>
-      </div>
-      <div class="gov-card">
-        <h4>Executive Leadership Review</h4>
-        <p>Product KPIs are presented at executive-level leadership calls — the highest form of internal accountability in a regulated financial institution.</p>
-      </div>
-      <div class="gov-card">
-        <h4>Franchise Testimonials</h4>
-        <p>Top-producing MO franchises — highest-revenue distribution partners — have provided direct testimonials on client engagement impact.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMPLIANCE -->
-<section class="alt">
-  <div class="container wide reveal">
-    <p class="section-label">Compliance & Architecture</p>
-    <h2>Built for a regulated market</h2>
-    <p class="lead">Compliance is not a constraint retrofitted at the end — it is a design input from day one.</p>
-    <div class="accordion" data-stagger>
-      <div class="acc-item open">
-        <button class="acc-head" aria-expanded="true">
-          <span class="acc-num">01</span><span class="acc-title">SEBI-compliant framework</span><span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel"><div class="acc-inner"><p>Responses are grounded in published analyst research, not independent AI inference.</p></div></div>
-      </div>
-      <div class="acc-item open">
-        <button class="acc-head" aria-expanded="true">
-          <span class="acc-num">02</span><span class="acc-title">DPDPA compliant by architecture</span><span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel"><div class="acc-inner"><p>No client-specific data is processed at the AI layer.</p></div></div>
-      </div>
-      <div class="acc-item open">
-        <button class="acc-head" aria-expanded="true">
-          <span class="acc-num">03</span><span class="acc-title">On-premise model deployment</span><span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel"><div class="acc-inner"><p>Client-facing models run on-premise — no user data is transmitted externally.</p></div></div>
-      </div>
-      <div class="acc-item open">
-        <button class="acc-head" aria-expanded="true">
-          <span class="acc-num">04</span><span class="acc-title">Dual-model evaluation</span><span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel"><div class="acc-inner"><p>An independent large-scale model evaluates every generation before delivery.</p></div></div>
-      </div>
-      <div class="acc-item open">
-        <button class="acc-head" aria-expanded="true">
-          <span class="acc-num">05</span><span class="acc-title">Live guardrail layer</span><span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel"><div class="acc-inner"><p>Validates numerical accuracy and analyst-position alignment on every response.</p></div></div>
-      </div>
-      <div class="acc-item open">
-        <button class="acc-head" aria-expanded="true">
-          <span class="acc-num">06</span><span class="acc-title">Citations on every response</span><span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel"><div class="acc-inner"><p>Every response is fully traceable to its source analyst report.</p></div></div>
-      </div>
-      <div class="acc-item open">
-        <button class="acc-head" aria-expanded="true">
-          <span class="acc-num">07</span><span class="acc-title">Full observability stack</span><span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel"><div class="acc-inner"><p>A live monitoring dashboard tracks all agent decisions across the system.</p></div></div>
-      </div>
+      <div class="metric-card"><div class="val">+5.7%</div><div class="desc">Widget engagement on the personalized home page</div></div>
+      <div class="metric-card"><div class="val">+5.0%</div><div class="desc">Clicks per user</div></div>
+      <div class="metric-card"><div class="val">+24%</div><div class="desc">Mutual Fund homepage engagement &mdash; tail discovery</div></div>
+      <div class="metric-card"><div class="val">2.1x</div><div class="desc">Fixed Deposit engagement</div></div>
+      <div class="metric-card"><div class="val">+9%</div><div class="desc">Commodity engagement</div></div>
+      <div class="metric-card"><div class="val">+2.8%</div><div class="desc">Equity brokerage revenue</div></div>
+      <div class="metric-card"><div class="val">18</div><div class="desc">Behavioural segments live in production</div></div>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p><strong>MO Research Suite</strong> — Motilal Oswal Financial Services Ltd.</p>
-  <p style="margin-top:0.5rem;">AI Products Team · Mumbai, India · 2026</p>
+  <div class="footer-logos">
+    <img src="images/mo-wealth-logo.png" alt="Motilal Oswal" />
+    <span class="div"></span>
+    <img src="images/riise-logo.png" alt="RIISE" />
+  </div>
+  <p><strong>MO Personalization Suite</strong> &mdash; Motilal Oswal Financial Services Ltd.</p>
+  <p style="margin-top:0.5rem;">Data Science Team &middot; Mumbai, India &middot; 2026</p>
 </footer>
 
 <script>
@@ -1261,7 +1145,7 @@
           const a = nodes[i], b = nodes[j];
           const d = Math.hypot(a.x - b.x, a.y - b.y);
           if (d < 132) {
-            ctx.strokeStyle = 'rgba(139,92,246,' + (0.18 * (1 - d / 132)).toFixed(3) + ')';
+            ctx.strokeStyle = 'rgba(67,70,201,' + (0.18 * (1 - d / 132)).toFixed(3) + ')';
             ctx.lineWidth = 1;
             ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
           }
@@ -1269,7 +1153,7 @@
       }
       for (const n of nodes) {
         ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(167,139,250,0.85)'; ctx.fill();
+        ctx.fillStyle = 'rgba(158,160,224,0.85)'; ctx.fill();
       }
       requestAnimationFrame(draw);
     };
